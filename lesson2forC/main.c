@@ -1,26 +1,41 @@
-
+#include <stdbool.h>
 #include <stdio.h>
 
 int main() {
-    int x = 70;
+//   for(int i = 1; i <= 10; i++)
+//       printf("%d\n", i);
+ 
+ 
+//    bool isHasCar = true;
+//    int x = 0;
+//    while(isHasCar) {
+//        printf("Введите число: ");
+//        scanf("%d", &x);
+//        if(x == 1)
+//           isHasCar = false;
+// }
     
-    switch (x) {
-        case 10:
-            printf("10");
+//
+//    float i = 100;
+//    while (i > 2) {
+//        printf("%.2f\n", i);
+//        i /= 2;
+//    }
+    
+    
+//    bool isHasCar = false;
+//    do {
+//        printf("Yes\n");
+//    } while(isHasCar);
+    
+    for(int x = 0; x < 10; x++) {
+        if(x == 7)
             break;
-        case 12:
-            printf("12");
-            break;
-        case 15:
-            printf("15");
-            break;
-        case 20:
-            printf("20");
-            break;
-        default:  // выполняется это действие если предыдущие все не сработали
-            printf("Error\n");
-            break;
+        
+        if(x % 2 ==0)
+            continue;
+            
+        printf("%d\n", x);
     }
-    
     return 0;
 }
