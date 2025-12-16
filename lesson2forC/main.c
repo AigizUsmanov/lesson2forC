@@ -1,27 +1,26 @@
 
 #include <stdio.h>
-#include <stdbool.h>
 
 int main() {
-    int x = 20, y = 5;
+    int x = 70;
     
-    if ((x == 10 && y < 7) || x == 20)
-        printf("Yes\n");
-      else  if (x > 100) {
-            if(x == 105)
-                printf("X is equel 105\n");
-          printf("X is greater 100\n");
-          
-        } else if(x < 5)
-            printf("X is less than 5\n");
-            else
-    printf("No\n");
+    switch (x) {
+        case 10:
+            printf("10");
+            break;
+        case 12:
+            printf("12");
+            break;
+        case 15:
+            printf("15");
+            break;
+        case 20:
+            printf("20");
+            break;
+        default:  // выполняется это действие если предыдущие все не сработали
+            printf("Error\n");
+            break;
+    }
     
-    bool isHasCar = true;
-    if(isHasCar == true) // if(isHasCar) это аналогичная запись
-    // if(isHasCar == false)  так же аналогично if(!isHisCar)
-        printf("Yes\n");
-    else
-        printf("No\n");
     return 0;
 }
